@@ -16,7 +16,7 @@ function calculatesFarePrice(start, destination) {
   if (feet < 400) {
     return 0
   } else if (feet >= 400 && feet <= 2000) {
-    return ((feet * .02) - (400 * .02)).toFixed(2)
+    return ((feet * .02) - (400 * .02)).toFixed(2).parseFloat()
   } else if (feet > 2000 && feet < 2500) {
     return 25
   } else if (feet > 2500) {
